@@ -1,0 +1,48 @@
+body {
+    padding: 100px;
+}
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 520px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 20px 2px rgba(0, 0, 0, .04)
+}
+
+.dashboard-area {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-area h1{
+    margin-bottom: 50px;
+}
+
+.deposit {
+    background: mediumaquamarine;
+}
+
+.withdraw {
+    background: lightsalmon;
+}
+
+.total-balance {
+    background: slateblue;
+}
+
+.status{
+    color: #ffffff;
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 10px;
+}

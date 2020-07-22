@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pioneer Bank</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Login Area -->
+    <section class="login-area" id="loginArea">
+
+        <h1 class="text-center">Welcome to Pioneer Bank</h1>
+
+        <div class="login-form">
+            <h4>Login</h4>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="email">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-success" id="btnLogin">Login</button>
+        </div>
+
+    </section>
+
+
+
+    <!-- Dashboard Area -->
+    <section class="dashboard-area" id=dashboardArea>
+
+        <h1 class="text-center">Dashboard</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="status deposit">
+                        <h5>Deposit</h5>
+                        <h2>$<span id="currentDeposit">0.00</span> </h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="status withdraw">
+                        <h5>Withdraw</h5>
+                        <h2>$0.00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="status total-balance">
+                        <h5>Total Balance</h5>
+                        <h2>$ <span id="currentTotalBalance">1240.00</span> </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="login-form w-100">
+                        <h4>Deposit</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="depositAmount" placeholder="$ amount you want to deposit">
+                        </div>
+                        <button type="submit" class="btn btn-success" id="btnDeposit">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="login-form w-100">
+                        <h4>Withdraw</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="withDrawAmount" placeholder="$ amount you want to withdraw">
+                        </div>
+                        <button type="submit" class="btn btn-success" id="btnWithDraw">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
