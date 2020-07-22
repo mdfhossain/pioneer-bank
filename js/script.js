@@ -1,7 +1,6 @@
 //Login Event Handler
 const loginBtn = document.getElementById('btnLogin');
 loginBtn.addEventListener('click', function () {
-    //console.log('Click Login Button');
     const loginArea = document.getElementById('loginArea');
     loginArea.style.display = 'none';
 
@@ -14,10 +13,8 @@ loginBtn.addEventListener('click', function () {
 const depositBtn = document.getElementById('btnDeposit');
 depositBtn.addEventListener('click', function () {
     const depositNumber = getAmount('depositAmount');
-
     updateBalance('currentDeposit', depositNumber);
     updateBalance('currentTotalBalance', depositNumber);
-
     document.getElementById('depositAmount').value = '';
 });
 
@@ -26,14 +23,15 @@ depositBtn.addEventListener('click', function () {
 const withDrawBtn = document.getElementById('btnWithDraw');
 withDrawBtn.addEventListener('click', function () {
     const withDrawNumber = getAmount('withDrawAmount');
+    updateBalance('currentWithDraw', withDrawNumber);
+    updateBalance('currentTotalBalance', -1 * withDrawNumber);
+    document.getElementById('withDrawAmount').value = '';
 });
-
 
 
 function getAmount(id) {
     const amount = document.getElementById(id).value;
     const withDrawNumber = parseFloat(amount);
-
     return withDrawNumber;
 }
 
